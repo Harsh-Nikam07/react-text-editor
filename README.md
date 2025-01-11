@@ -12,22 +12,6 @@ This project is a simple rich text editor built using React and Draft.js. It all
 - **Autosave Feature**: The editor automatically saves content to local storage every second if there is text present.
 - **Toast Notifications**: Notifications are displayed to inform users about the success or failure of saving content.
 
-## Project Structure
-frame a read me file in which add project info , how it works , structure and instructions to install
-
-react-editor/
-├── public/
-│ ├── index.html
-│ └── manifest.json
-├── src/
-│ ├── components/
-│ │ ├── Toast.js
-│ │ └── toast.css
-│ ├── App.js
-│ ├── index.js
-│ └── index.css
-├── tailwind.config.js
-└── package.json
 
 ### Key Files
 - **App.js**: Main application component that contains the editor logic.
