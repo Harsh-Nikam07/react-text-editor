@@ -1,71 +1,64 @@
-# Getting Started with Create React App
+# React Demo Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Information
+This project is a simple rich text editor built using React and Draft.js. It allows users to format text using markdown-style commands, such as headings, bold, underline, and custom styles. The editor also supports autosaving content to local storage and displaying toast notifications for user feedback.
 
-## Available Scripts
+## How It Works
+- **Editor Functionality**: The editor uses Draft.js to manage the editor state and handle text formatting. Users can type text and apply styles using specific characters:
+  - `#` for headings
+  - `*` for bold text
+  - `**` for red text
+  - `***` for underlined text
+- **Autosave Feature**: The editor automatically saves content to local storage every second if there is text present.
+- **Toast Notifications**: Notifications are displayed to inform users about the success or failure of saving content.
 
-In the project directory, you can run:
+## Project Structure
+frame a read me file in which add project info , how it works , structure and instructions to install
 
-### `npm start`
+react-editor/
+├── public/
+│ ├── index.html
+│ └── manifest.json
+├── src/
+│ ├── components/
+│ │ ├── Toast.js
+│ │ └── toast.css
+│ ├── App.js
+│ ├── index.js
+│ └── index.css
+├── tailwind.config.js
+└── package.json
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Files
+- **App.js**: Main application component that contains the editor logic.
+- **Toast.js**: Component for displaying toast notifications.
+- **toast.css**: Styles for the toast notifications.
+- **index.js**: Entry point of the application.
+- **index.css**: Global styles including Tailwind CSS imports.
+- **tailwind.config.js**: Configuration for Tailwind CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instructions to Install
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd react-editor
+   ```
 
-### `npm test`
+2. **Install Dependencies**:
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Run the Application**:
+   Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+4. **Open in Browser**:
+   Navigate to `http://localhost:3000` in your web browser to view the editor.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-text-editor
+## Additional Notes
+- Ensure you have the necessary permissions to access local storage in your browser.
+- The project uses Tailwind CSS for styling, so you may want to familiarize yourself with its utility classes for further customization.
